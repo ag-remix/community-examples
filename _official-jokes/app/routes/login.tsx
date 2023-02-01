@@ -27,7 +27,8 @@ function validatePassword(password: unknown) {
   }
 }
 
-function validateUrl(url: string) {
+function validateUrl(url: FormDataEntryValue) {
+  if (typeof url !== "string") return;
   const urls = ["/jokes", "/", "https://remix.run"];
   if (urls.includes(url)) {
     return url;

@@ -1,5 +1,3 @@
-/** @jsx jsx */
-import { jsx } from "@theme-ui/core";
 import { Link } from "@remix-run/react";
 
 export default function Jokes() {

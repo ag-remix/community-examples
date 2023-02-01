@@ -34,8 +34,8 @@
     "@remix-run/node": "*",
     "@remix-run/react": "*",
     "@remix-run/serve": "*",
-    "marked": "^4.0.15",
     "isbot": "^3.6.5",
+    "marked": "^4.0.15",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "tiny-invariant": "^1.2.0"

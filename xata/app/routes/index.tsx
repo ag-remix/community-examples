@@ -3,7 +3,9 @@ import type { ActionArgs } from "@remix-run/node";
 import { json } from "@remix-run/node";
 import { Form, useFetcher, useLoaderData } from "@remix-run/react";
 
+// @ts-expect-error
 import type { RemixWithXataExampleRecord } from "~/lib/xata.codegen.server";
+// @ts-expect-error
 import { getXataClient } from "~/lib/xata.codegen.server";
 
 export const LINKS = [
@@ -103,7 +105,7 @@ export default function Index() {
       <article>
         {links.length > 0 ? (
           <ul>
-            {links.map((link) => (
+            {links.map((link: any) => (
               <Task key={link.id} {...link} />
             ))}
           </ul>
